@@ -83,6 +83,18 @@ Nếu đã có sẵn dữ liệu, có thể nhắn cụ thể hơn:
 
 > Thêm sản phẩm [tên sản phẩm]. Tôi sẽ cung cấp ảnh sản phẩm, đường dẫn trang chính thức, USP và nội dung quảng cáo đã duyệt. Hãy kiểm tra dữ liệu còn thiếu, tạo thư mục sản phẩm đúng cấu trúc và hỏi lại những điểm chưa rõ trước khi dùng làm claim.
 
+### Nhập sản phẩm trực tiếp từ website bằng `/usp_product`
+
+Khi có nhiều sản phẩm trên website, người dùng chỉ cần gửi URL trang sản phẩm:
+
+> `/usp_product https://phacheviet.com/products/bot-matcha-novia-xanh`
+
+AI sẽ đọc trang sản phẩm chính thức, trích tên/loại sản phẩm, giá, mô tả, USP được công bố và metadata ảnh; tải ảnh sản phẩm gốc vào `products/<product-id>/images/reference/`; rồi tạo hoặc cập nhật `products/<product-id>/product.yaml` theo đúng schema của dự án.
+
+AI phải báo lại URL đã đọc, product-id, các ảnh đã tải, dữ kiện đã trích và trạng thái từng claim. Nội dung crawl từ website không mặc nhiên là claim `verified`: người dùng cần xác nhận các USP muốn dùng cho banner. AI không được lấy ảnh banner/lifestyle thay cho ảnh sản phẩm, không cắt/chỉnh sửa ảnh gốc, không suy luận USP từ hình ảnh và không tự tạo prompt banner sau bước crawl.
+
+Nếu URL không phải trang sản phẩm cụ thể, ảnh bị chặn hoặc chỉ có thumbnail, AI phải báo rõ và yêu cầu URL/ảnh gốc thay thế. Quy tắc chi tiết nằm tại [skills/usp-product/SKILL.md](skills/usp-product/SKILL.md).
+
 ### Kiểm tra dữ liệu trước khi tạo prompt
 
 > Kiểm tra mức độ sẵn sàng của thương hiệu và sản phẩm [product-id] để tạo banner. Không tạo prompt ở bước này. Hãy báo rõ file hoặc dữ liệu còn thiếu, claim nào chưa verified, ảnh nào không đọc được và nội dung nào cần tôi phê duyệt.
