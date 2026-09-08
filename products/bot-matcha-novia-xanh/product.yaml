@@ -2,8 +2,18 @@ schema_version: 1
 product_id: bot-matcha-novia-xanh
 name: Bột Matcha Novia Xanh
 brand: phacheviet
-status: needs_reference_image
-reference_images: []
+status: ready_for_review
+reference_images:
+  - path: images/reference/product-gallery-01.jpg
+    role: primary
+    source: official_product_page
+    source_location: https://cdn.hstatic.net/products/200000559893/3782756993374406789_642dbec5ab5243e1a7d6debad15772a5.jpg
+    variant: Gói 500gr
+  - path: images/reference/product-gallery-02.jpg
+    role: alternate
+    source: official_product_page
+    source_location: https://cdn.hstatic.net/products/200000559893/242100022407768711_83976ac2b64c40ca9fa0871eb72300e2.jpg
+    variant: Gói 100gr
 facts:
   product_type:
     value: bột matcha / bột trà xanh
@@ -14,6 +24,36 @@ facts:
   listed_price_vnd:
     value: 78000
     status: verified
+    source_type: official_product_page
+    source_location: https://phacheviet.com/products/bot-matcha-novia-xanh
+    checked_at: "2026-09-08"
+  variants:
+    value:
+      - name: Gói 100gr
+        sku: "8938530047573"
+        listed_price_vnd: 78000
+      - name: Gói 500gr
+        sku: "8938530047580"
+        listed_price_vnd: 367000
+    status: observed
+    source_type: official_product_page
+    source_location: https://phacheviet.com/products/bot-matcha-novia-xanh
+    checked_at: "2026-09-08"
+  shelf_life:
+    value: 12 tháng kể từ ngày sản xuất; ngày sản xuất và hạn sử dụng in trên nhãn
+    status: observed
+    source_type: official_product_page
+    source_location: https://phacheviet.com/products/bot-matcha-novia-xanh
+    checked_at: "2026-09-08"
+  uses:
+    value: nguyên liệu pha chế đồ uống, làm bánh, kẹo và kem
+    status: observed
+    source_type: official_product_page
+    source_location: https://phacheviet.com/products/bot-matcha-novia-xanh
+    checked_at: "2026-09-08"
+  preparation:
+    value: 4 g bột matcha với 40 ml nước nóng khoảng 80°C; đánh bằng chổi Chasen, sau đó thêm 120–150 ml sữa tươi, sữa hạt hoặc nước trái cây
+    status: observed
     source_type: official_product_page
     source_location: https://phacheviet.com/products/bot-matcha-novia-xanh
     checked_at: "2026-09-08"
@@ -42,6 +82,30 @@ usps:
     source_type: user_approved
     source_location: user-confirmed product record (migrated from legacy catalog)
     checked_at: "2026-09-08"
+  - id: bot-tra-xanh-sieu-min
+    value: bột trà xanh siêu mịn
+    status: observed
+    source_type: official_product_page
+    source_location: https://phacheviet.com/products/bot-matcha-novia-xanh
+    checked_at: "2026-09-08"
+  - id: huong-vi-thanh-nhe-hau-ngot
+    value: hương vị thanh nhẹ, hậu ngọt tự nhiên
+    status: observed
+    source_type: official_product_page
+    source_location: https://phacheviet.com/products/bot-matcha-novia-xanh
+    checked_at: "2026-09-08"
+  - id: mau-xanh-luc-tuoi
+    value: màu xanh lục tươi
+    status: observed
+    source_type: official_product_page
+    source_location: https://phacheviet.com/products/bot-matcha-novia-xanh
+    checked_at: "2026-09-08"
+  - id: dong-goi-kin
+    value: đóng gói kín bằng máy
+    status: observed
+    source_type: official_product_page
+    source_location: https://phacheviet.com/products/bot-matcha-novia-xanh
+    checked_at: "2026-09-08"
 approved_copy:
   headlines: []
   supporting_lines:
@@ -53,4 +117,7 @@ promotion:
   valid_from: null
   valid_until: null
 prohibited_claims: []
-notes: Add at least one supplied original image under images/reference/ and register its relative path in reference_images before batching.
+notes: >-
+  Crawled from the official product page on 2026-09-08. Health-related claims on the page
+  (antioxidant, weight loss, cardiovascular protection, concentration, immunity and skin benefits)
+  were intentionally not promoted into USP fields and require explicit review before advertising use.
