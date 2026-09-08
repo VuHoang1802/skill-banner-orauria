@@ -1,0 +1,110 @@
+schema_version: 1
+onboarding:
+  status: in_progress
+  last_updated: "2026-09-08"
+  approved_by: null
+
+identity:
+  official_name: phacheviet
+  preferred_spelling: phacheviet
+  description: null
+  website: https://phacheviet.com
+  links: []
+  markets: [Vietnam]
+  languages: [vi]
+
+positioning:
+  primary_audience:
+    - quán trà sữa
+    - quán cà phê
+  secondary_audience: []
+  problem_solved: nguyên liệu pha matcha latte và trà sữa matcha
+  buying_motivations:
+    - pha matcha latte
+    - pha trà sữa matcha
+  price_position: phổ thông–trung cấp
+  personality: [chuyên nghiệp, sạch, tự nhiên]
+  competitors: []
+  do_not_imitate: []
+
+visual_identity:
+  primary_colors: []
+  secondary_colors: []
+  accent_colors: []
+  neutral_colors: []
+  forbidden_colors: []
+  primary_font: null
+  secondary_font: null
+  fallback_fonts: []
+
+production:
+  channels: []
+  aspect_ratios: []
+  target_models: []
+  render_text_in_image: null
+  default_concept_count: 4
+
+sources:
+  - field: identity.official_name
+    status: verified
+    source: user
+    recorded_at: "2026-09-08"
+  - field: identity.preferred_spelling
+    status: verified
+    source: user
+    recorded_at: "2026-09-08"
+  - field: identity.website
+    status: verified
+    source: user
+    value: https://phacheviet.com/products/bot-matcha-novia-xanh
+    recorded_at: "2026-09-08"
+  - field: identity.markets
+    status: observed
+    source: product-page-language-and-domain
+    value: Vietnam
+    recorded_at: "2026-09-08"
+  - field: identity.languages
+    status: observed
+    source: product-page-language
+    value: vi
+    recorded_at: "2026-09-08"
+  - field: positioning.personality
+    status: verified
+    source: user
+    value: [chuyên nghiệp, sạch, tự nhiên]
+    recorded_at: "2026-09-08"
+  - field: positioning.primary_audience
+    status: verified
+    source: user
+    value: [quán trà sữa, quán cà phê]
+    recorded_at: "2026-09-08"
+  - field: positioning.price_position
+    status: verified
+    source: user
+    value: phổ thông–trung cấp
+    recorded_at: "2026-09-08"
+  - field: positioning.problem_solved
+    status: verified
+    source: user
+    value: nguyên liệu pha matcha latte và trà sữa matcha
+    recorded_at: "2026-09-08"
+  - field: positioning.buying_motivations
+    status: verified
+    source: user
+    value: [pha matcha latte, pha trà sữa matcha]
+    recorded_at: "2026-09-08"
+  - field: identity.logo_spelling
+    status: observed
+    source: official-logo-asset
+    value: Phacheviet.com
+    recorded_at: "2026-09-08"
+  - field: identity.logo_dot_com_required
+    status: verified
+    source: user
+    value: false
+    recorded_at: "2026-09-08"
+  - field: identity.logo_recolor_allowed
+    status: verified
+    source: user
+    value: true
+    recorded_at: "2026-09-08"

@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "orauria": {
+      "url": "https://orauria.com/api/mcp",
+      "headers": {
+        "Authorization": "Bearer ${ORAURIA_API_KEY}"
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+schema_version: 1
+assets:
+  - id: phacheviet-logo-white-transparent
+    path: brand/assets/logos/original/phacheviet-logo.png
+    type: logo
+    variant: white-wordmark-transparent
+    source: https://theme.hstatic.net/200000559893/1000931171/14/logo.png?v=853
+    status: observed
+    approved_by: null
+    mime_type: image/png
+    dimensions_px: 182x56
+    transparency: true
+    visible_text: Phacheviet.com
+    intended_use: dark or colored backgrounds
+    notes: Official-site asset supplied by the user; preserve original file unchanged. Small raster asset, not suitable for large-format output.
+
+# Each asset should record:
+# - id
+# - path
+# - type: logo | font | product | approved_reference | rejected_reference | other
+# - variant
+# - source
+# - status: verified | observed | suggested | derived
+# - approved_by
+# - notes

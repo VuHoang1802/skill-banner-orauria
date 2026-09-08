@@ -1,0 +1,56 @@
+schema_version: 1
+product_id: bot-matcha-novia-xanh
+name: Bột Matcha Novia Xanh
+brand: phacheviet
+status: needs_reference_image
+reference_images: []
+facts:
+  product_type:
+    value: bột matcha / bột trà xanh
+    status: verified
+    source_type: official_product_page
+    source_location: https://phacheviet.com/products/bot-matcha-novia-xanh
+    checked_at: "2026-09-08"
+  listed_price_vnd:
+    value: 78000
+    status: verified
+    source_type: official_product_page
+    source_location: https://phacheviet.com/products/bot-matcha-novia-xanh
+    checked_at: "2026-09-08"
+usps:
+  - id: nhap-khau-nhat-chuan
+    value: nhập khẩu Nhật chuẩn
+    status: verified
+    source_type: user_approved
+    source_location: user-confirmed product record (migrated from legacy catalog)
+    checked_at: "2026-09-08"
+  - id: nguyen-lieu-sach
+    value: nguyên liệu sạch
+    status: verified
+    source_type: user_approved
+    source_location: user-confirmed product record (migrated from legacy catalog)
+    checked_at: "2026-09-08"
+  - id: nguon-goc-ro-rang
+    value: nguồn gốc rõ ràng
+    status: verified
+    source_type: user_approved
+    source_location: user-confirmed product record (migrated from legacy catalog)
+    checked_at: "2026-09-08"
+  - id: gia-thanh-phu-hop
+    value: giá thành phù hợp
+    status: verified
+    source_type: user_approved
+    source_location: user-confirmed product record (migrated from legacy catalog)
+    checked_at: "2026-09-08"
+approved_copy:
+  headlines: []
+  supporting_lines:
+    - Nguyên liệu sạch, nguồn gốc rõ ràng, giá thành phù hợp
+  ctas: []
+promotion:
+  text: null
+  status: pending
+  valid_from: null
+  valid_until: null
+prohibited_claims: []
+notes: Add at least one supplied original image under images/reference/ and register its relative path in reference_images before batching.

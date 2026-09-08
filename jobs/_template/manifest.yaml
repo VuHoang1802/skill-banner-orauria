@@ -1,0 +1,19 @@
+schema_version: 1
+batch_id: replace-with-yyyy-mm-dd-campaign
+brand_profile: brand/brand-profile.yaml
+template_packs:
+  - library/prompt-templates/default.txt
+products:
+  - product_id: replace-with-product-id
+    enabled: true
+    template_ids: all
+    overrides:
+      headline: null
+      cta: null
+      promotion: null
+settings:
+  allow_placeholders: false
+  prompts_per_product_file: true
+  output_root: outputs
+  output_filename: prompts.txt
+  one_prompt_per_line: true

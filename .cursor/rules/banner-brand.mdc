@@ -1,0 +1,9 @@
+---
+description: Onboard a brand and generate banner prompts from the local inspiration library
+alwaysApply: true
+---
+
+Read `PROJECT.md` before working in this project.
+
+Inspect `brand/brand-profile.yaml`. When onboarding is incomplete, follow `instructions/ONBOARDING.md` and interview the user before generating final banner prompts. Store verified brand knowledge under `brand/`; never rely on chat history as permanent memory.
+
